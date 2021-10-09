@@ -1,9 +1,10 @@
+import React from 'react'
 
 
-const Square = (props) => {
+const Square = ({ value, style, onClick }) => {
     return (
-        <button style={props.style} type="button" onClick={props.onClick}>
-            {props.value}
+        <button style={style} type="button" onClick={onClick}>
+            {value}
         </button>
     )
 }

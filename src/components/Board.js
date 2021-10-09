@@ -1,8 +1,8 @@
+import React, { useState } from 'react'
 import Square from './Square'
 import Actions from './Actions'
-import React, { useState } from 'react'
 
-const Board = () => {
+const BoardGame = () => {
 
     const [Board, setBoard] = useState(Array(9).fill(null))
     const [xIsNext, setXIsNext] = useState(false)
@@ -36,7 +36,7 @@ const Board = () => {
     const setBoardHandler = (position) => {
         if (Board[position] || winner) return
 
-        let newBoard = Board
+        const newBoard = Board
         newBoard[position] = xIsNext ? 'X' : 'O'
         setBoard(newBoard)
 
@@ -73,4 +73,4 @@ const Board = () => {
     )
 }
 
-export default Board
+export default BoardGame
