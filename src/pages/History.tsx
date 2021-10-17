@@ -1,5 +1,5 @@
 import React from 'react'
-import MainPageLayout from '../layouts/MainPageLayout'
+import MainPageLayout from '../layouts/MainPageLayout.tsx'
 
 const HistoryPage = () => {
     return (

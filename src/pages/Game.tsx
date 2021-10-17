@@ -1,6 +1,6 @@
 import React from 'react'
-import Board from '../components/Board'
-import MainPageLayout from '../layouts/MainPageLayout'
+import Board from '../components/Board.tsx'
+import MainPageLayout from '../layouts/MainPageLayout.tsx'
 
 
 const GamePage = () => {

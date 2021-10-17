@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Square from './Square'
-import Actions from './Actions'
+import Actions from './Actions.tsx'
 
 const BoardGame = () => {
 

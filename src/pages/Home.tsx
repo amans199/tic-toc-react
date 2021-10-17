@@ -1,11 +1,10 @@
 import React from 'react'
-import MainPageLayout from '../layouts/MainPageLayout'
+import MainPageLayout from '../layouts/MainPageLayout.tsx'
 
-const HomePage = () => {
+const HomePage: React.FC = () => {
     return (
         <MainPageLayout>
             HomePageHomePageHomePageHomePage
-
         </MainPageLayout>
     )
 }

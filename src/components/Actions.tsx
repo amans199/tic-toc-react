@@ -1,6 +1,16 @@
 import React from 'react'
 
-const Actions = ({ onReset, player1Color, player2Color, onChangePlayer1Color, onChangePlayer2Color, winner }) => {
+type props = {
+    onReset: () => void,
+    player1Color: string,
+    player2Color: string,
+    onChangePlayer1Color: () => void,
+    onChangePlayer2Color: () => void,
+    winner: string,
+}
+
+
+const Actions: React.FC<props> = ({ onReset, player1Color, player2Color, onChangePlayer1Color, onChangePlayer2Color, winner }) => {
 
     return (
         <>

@@ -1,5 +1,5 @@
-import HomePage from './Home'
-import GamePage from './Game'
-import HistoryPage from './History'
+import HomePage from './Home.tsx'
+import GamePage from './Game.tsx'
+import HistoryPage from './History.tsx'
 
 export { HomePage, GamePage, HistoryPage }
