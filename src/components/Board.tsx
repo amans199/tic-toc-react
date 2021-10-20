@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
-import Square from './Square'
-import Actions from './Actions.tsx'
+import { Square, Actions } from './index'
 
 const BoardGame = () => {
 
@@ -33,7 +32,11 @@ const BoardGame = () => {
     }
 
 
-    const setBoardHandler = (position) => {
+    type setBoardHandlerProps = {
+        position: number,
+    }
+
+    const setBoardHandler: React.FC<setBoardHandlerProps> = (position) => {
         if (Board[position] || winner) return
 
         const newBoard = Board

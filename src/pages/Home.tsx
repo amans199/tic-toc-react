@@ -1,5 +1,5 @@
 import React from 'react'
-import MainPageLayout from '../layouts/MainPageLayout.tsx'
+import { MainPageLayout } from '../layouts/index'
 
 const HomePage: React.FC = () => {
     return (
