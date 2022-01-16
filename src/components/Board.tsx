@@ -32,11 +32,11 @@ const BoardGame = () => {
     }
 
 
-    type setBoardHandlerProps = {
-        position: number,
-    }
+    // type setBoardHandlerProps = {
+    //     position: number,
+    // }
 
-    const setBoardHandler: React.FC<setBoardHandlerProps> = (position) => {
+    const setBoardHandler = (position: number) => {
         if (Board[position] || winner) return
 
         const newBoard = Board
@@ -45,6 +45,8 @@ const BoardGame = () => {
 
         calculateWinner()
         setXIsNext(!xIsNext)
+
+        // return newBoard
     }
 
 
@@ -60,8 +62,8 @@ const BoardGame = () => {
                 player1Color={player1Color}
                 player2Color={player2Color}
                 winner={winner}
-                onChangePlayer1Color={(e) => { setPlayer1Color(e.target.value) }}
-                onChangePlayer2Color={(e) => { setPlayer2Color(e.target.value) }}
+                onChangePlayer1Color={(e: React.ChangeEvent<HTMLInputElement>) => { setPlayer1Color(e.target.value) }}
+                onChangePlayer2Color={(e: React.ChangeEvent<HTMLInputElement>) => { setPlayer2Color(e.target.value) }}
                 onReset={() => { resetHandler() }} />
 
             <section className={`board  ${winner ? 'winner--' + winner : ''}`}  >

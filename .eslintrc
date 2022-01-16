@@ -48,6 +48,8 @@
     "jsx-a11y/label-has-for": "off",
     "prefer-template": "off",
     "no-nested-ternary": "off",
-    "import/no-cycle": "off"
+    "import/no-cycle": "off",
+    "consistent-return": "off",
+    "react/no-unused-prop-types": "off"
   }
 }

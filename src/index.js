@@ -1,13 +1,34 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
+
+import {
+  ApolloClient,
+  InMemoryCache,
+  ApolloProvider,
+} from "@apollo/client";
+
 import './index.css';
+// const { graphql, buildSchema } = require('graphql');
+
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const client = new ApolloClient({
+  playground: true,
+  // uri: 'https://48p1r2roz4.sse.codesandbox.io',
+  uri: 'http://localhost:3000/playground',
+  cache: new InMemoryCache()
+});
+
+
+
 ReactDOM.render(
   <BrowserRouter>
-    <App />
+    <ApolloProvider client={client} >
+      <App />
+    </ApolloProvider>
   </BrowserRouter>,
   document.getElementById('root')
 );

@@ -7,6 +7,7 @@ const Routes = () => {
             <Link to="/">home</Link>
             <Link to="/game" >game</Link>
             <Link to="/history">history</Link>
+            <Link to="/playground">playground</Link>
         </header>
 
     )

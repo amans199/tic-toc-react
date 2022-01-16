@@ -1,0 +1,54 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "firstname": "Mike",
+            "age": 12
+        },
+        {
+            "id": 10,
+            "firstname": "Lucy",
+            "age": 31
+        }
+    ],
+    "posts": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "title": "A day on the beach",
+            "date": "2018-01-01"
+        },
+        {
+            "id": 24,
+            "user_id": 10,
+            "title": "Coding for joy",
+            "date": "2018-12-24"
+        },
+        {
+            "id": 25,
+            "user_id": 9,
+            "title": "On the road",
+            "date": "2018-12-25"
+        }
+    ],
+    "comments": [
+        {
+            "id": 1,
+            "user_id": 1,
+            "post_id": 1,
+            "text": "Some text."
+        },
+        {
+            "id": 99,
+            "user_id": 10,
+            "post_id": 25,
+            "text": "Some more text."
+        },
+        {
+            "id": 100,
+            "user_id": 9,
+            "post_id": 24,
+            "text": "Bla, bla, bla ..."
+        }
+    ]
+}

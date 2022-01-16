@@ -4,7 +4,7 @@ import { Switch, Route } from 'react-router-dom'
 import './App.css';
 // import Board from './components/Board'
 // import Routes from './components/Routes'
-import { HomePage, GamePage, HistoryPage } from './pages/Pages';
+import { HomePage, GamePage, HistoryPage, PlaygroundPage } from './pages/Pages';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
 
         <Route exact path='/' component={HomePage} />
         <Route exact path='/game' component={GamePage} />
-
         <Route exact path='/history' component={HistoryPage} />
+        <Route exact path='/playground' component={PlaygroundPage} />
       </Switch>
     </main>
   );
